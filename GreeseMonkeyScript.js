@@ -26,6 +26,8 @@ var counter = 0;
 function screenShot(){
     console.log("Taking screen shot...");
     addText( counter, $("#textId").val());
+    // clear input
+    $("#textId").val("");
     counter = counter + 1;
     var canvas = document.getElementById('canvas');
     var video = document.getElementsByClassName("html5-main-video")[0];
